@@ -1,36 +1,32 @@
 # SchoolPilot — School Management Demo
 
-A reusable responsive school-management demonstration built for presenting a proposed digital platform to Nigerian secondary schools.
+A reusable, responsive school-management demonstration for presenting a proposed digital platform to Nigerian secondary schools.
 
-## Included modules
-- Admin overview with school statistics and academic analytics.
-- School identity customisation: name, motto, contacts, address, academic session, term, logo preview and primary colour.
-- Student directory with search, class filter, add-student workflow and CSV export.
-- Teacher directory with add-teacher workflow.
-- Class and subject overview.
-- Examination score entry and automatic grade calculation.
-- WAEC-style CBT practice with multiple-choice questions and instant score feedback.
-- Performance intelligence and subject insights.
-- School announcements.
+## Demo modules
+- Administrator workspace with school branding, student and teacher directories, classes, subjects, results, announcements and performance overview.
+- Teacher workspace preview with sample assigned classes, subject responsibilities and assessment workflow.
+- Student portal preview with sample profile, academic summary, WAEC practice access and learning progress.
+- WAEC-style practice bank across Mathematics, English Language, Biology, Chemistry, Physics and Economics.
+- Timed subject practice and a post-test review for every question: the student's response, the correct option, a worked explanation and notes on why the distractors are incorrect.
+- School identity customisation, responsive layout and browser-local sample data.
 
 ## Run locally
-1. Download or clone the repository.
-2. Put the folder in your PHP web root (for XAMPP, the htdocs folder).
-3. Open the project through a PHP-enabled web server, for example http://localhost/studyhub/.
+1. Download or clone this repository.
+2. Put the folder in a PHP web root (for XAMPP, the htdocs folder).
+3. Open http://localhost/studyhub/ or run `php -S localhost:8000` from the project directory.
 
-A PHP server can also be started from the project directory with: php -S localhost:8000
+## Demo accounts
+Use **Preview portals** in the top bar to switch between Administrator, Teacher and Student experiences. No passwords are needed because this is a guided demonstration, not real authentication.
 
-No database is required for this demo. Records and school branding are saved in the current browser's localStorage.
+## Demo data and limitations
+All names, scores, teacher assignments, portal activity and practice questions are illustrative demo content. Data is saved in the current browser's localStorage. There is no live multi-user database, secure authentication, cross-device sync, server-side test security, official WAEC question licensing, parent account or payment integration. Do not enter real student personal information.
 
-## Personalise for a school
-Open School profile, change the school name and details, select its brand colour, upload a logo preview and save. The dashboard identity updates immediately. Changes are browser-local and do not alter the source files.
+The question bank contains original WAEC-style practice questions, not a claim that these are official past questions. The explanations are educational notes written for this demo and should be reviewed by a qualified subject teacher before commercial or classroom use.
 
-## Important limitations
-This is a sales/demo prototype, not a production school information system. Sample data is stored in the current browser only. There is no authentication, server database, parent/student portal, fee payment, server-side examination security, backup or multi-school tenant isolation. Never enter real student personal information.
-
-A production release needs a PHP/MySQL backend, role-based access control, password hashing, CSRF protection, audit logs, backups, secure CBT scheduling and marking, result approval workflows, tenant isolation and security/privacy testing.
+A production deployment would need PHP/MySQL persistence, password hashing, role-based access control, CSRF protection, tenant isolation, audit logs, backups, secure CBT scheduling and marking, result approval, privacy/security testing and a larger verified/licensed question bank.
 
 ## Structure
-- index.php — application shell
-- assets/css/app.css — responsive interface
-- assets/js/app.js — demo interactions and local persistence
+- `index.php` — PHP application shell
+- `assets/css/app.css` — responsive interface and portal/review styling
+- `assets/js/app.js` — demo workflows, sample bank and browser-local persistence
+- `database/schema.sql` — starting database schema
