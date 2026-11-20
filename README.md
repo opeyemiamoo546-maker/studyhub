@@ -4,10 +4,10 @@ A reusable, responsive school-management demonstration for presenting a proposed
 
 ## Demo modules
 - Administrator workspace with school branding, student and teacher directories, classes, subjects, results, announcements and performance overview.
-- Teacher workspace preview with sample assigned classes, subject responsibilities and assessment workflow.
-- Student portal preview with sample profile, academic summary, WAEC practice access and learning progress.
+- Interactive teacher workspace with sample assigned classes, assignment creation, student submission review, grading and feedback, plus examination mark entry.
+- Interactive student portal with report-card records, class assignments, submission workflow, teacher feedback, WAEC practice history and average score.
 - WAEC-style practice bank across Mathematics, English Language, Biology, Chemistry, Physics and Economics.
-- Timed subject practice and a post-test review for every question: the student's response, the correct option, a worked explanation and notes on why the distractors are incorrect.
+- Timed subject practice and a post-test review for every question: the student's response, the correct option, a worked explanation and notes on why the distractors are incorrect. Completed practice attempts are saved in the browser and shown in the student learning history.
 - School identity customisation, responsive layout and browser-local sample data.
 
 ## Run locally
@@ -19,7 +19,7 @@ A reusable, responsive school-management demonstration for presenting a proposed
 Use **Preview portals** in the top bar to switch between Administrator, Teacher and Student experiences. No passwords are needed because this is a guided demonstration, not real authentication.
 
 ## Demo data and limitations
-All names, scores, teacher assignments, portal activity and practice questions are illustrative demo content. Data is saved in the current browser's localStorage. There is no live multi-user database, secure authentication, cross-device sync, server-side test security, official WAEC question licensing, parent account or payment integration. Do not enter real student personal information.
+All names, scores, teacher assignments, assignment submissions, teacher feedback, portal activity and practice questions are illustrative demo content. Data is saved in the current browser's localStorage. Teacher and student role previews share the same browser demo data and are not separate authenticated accounts. There is no live multi-user database, secure authentication, cross-device sync, server-side test security, official WAEC question licensing, parent account or payment integration. Do not enter real student personal information.
 
 The question bank contains original WAEC-style practice questions, not a claim that these are official past questions. The explanations are educational notes written for this demo and should be reviewed by a qualified subject teacher before commercial or classroom use.
 
